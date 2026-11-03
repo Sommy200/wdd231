@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Somto Unachukwu">
+    <meta name="description" content="This is the home page for this course WDD231">
+    <title>WDD 231</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css"> 
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/homepage_large.css">
+
+    <script src="scripts/homepage.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/online-course.svg" alt="CourseLogo" width="24" height="24">
+        <span>WDD 231</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Somto Unachukwu. I am a student at BYU-Idaho. I am currently studying Web Design and Development. I have a
+                passion for web development and I am excited to learn more about it in this course.</p>
+        </section>
+
+        <section> 
+            <h2>Student Photo</h2>
+            <img src="images/somtochukwu-unachukwu.png" alt="Somto Unachukwu" class="student-photo">
+        </section>
+        
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button type="button">All</button>
+                <button type="button">CSE</button>
+                <button type="button">WDD</button>
+            </div>
+            <ul class="course-list"></ul>
+            <p class="total-credits" id="credits"> The total credit for courses listed above is <strong id="total-credits"></strong>.</p>
+  
+        </section>
+        
+        
+    </main>
+    <footer> 
+        <div class="social">
+            <a href="https://www.facebook.com/somtochukwu.unachukwu"><img src="images/face_book.svg" alt="Facebook" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/somtochukwu-christian-unachukwu-9a2537103"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/Sommy200"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Somto Unachukwu | Amichi | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
