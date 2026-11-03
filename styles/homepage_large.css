@@ -24,4 +24,9 @@
   .navigation a {
         border: none;
      }
+  
+  .student-photo {
+       margin-left: 360px;
+  }
+  
 }
