@@ -1,0 +1,15 @@
+{
+    "companies": [
+       {"Business Name": "Chisco group of companies", "Address": "No 1, Chisco street, Amichi", "Phone Number": "+234 802 345 6789", "Website": "https://www.chiscogroup.com", "imageurl": "https://chiscotransport.com.ng/assets/logo-white.svg", "membership level": "Gold"},
+       {"Business Name": "Ibeto Nigeria Ltd", "Address": "123 Tech Avenue, Amichi, Anambra", "Phone Number": "+234 803 456 7890", "Website": "https://www.Ibetogroup.com", "imageurl": "https://ibeto.com/Images/IBETO-logo-1.png", "membership level": "Silver"},
+       {"Business Name": "Erisco foods Ltd", "Address": "456 Amichi, Anambra state", "Phone Number": "+234 803 456 7893", "Website": "https://www.eriscofoods2009.com", "imageurl": "https://eriscofoodsltd.com.ng/wp-content/uploads/2024/09/EriscoLogo-color.png", "membership level": "Bronze"},
+       {"Business Name": "Healthy Bites Cafe", "Address": "789 Healthy St, Amichi, Anambra", "Phone Number": "+234 803 456 7894", "Website": "https://www.healthybitescafe.com", "imageurl": "https://healthybites.cafe/wp-content/uploads/2024/03/HealthyBites-Cafe-full-logo.png", "membership level": "Silver"},
+       {"Business Name": "Urban Fitness Gym", "Address": "321 Fitness Lane, Amichi, Anambra", "Phone Number": "+234 803 456 7895", "Website": "https://www.urbanfitnessgym.com", "imageurl": "https://images.squarespace-cdn.com/content/v1/60abd0420b858574046328d4/9c1bed8c-f19a-4f69-816a-f3c61eea5b52/Untitled+design.png?format=1500w", "membership level": "Gold"},
+       {"Business Name": "Tech Solutions Ltd", "Address": "654 Tech Park, Amichi, Anambra", "Phone Number": "+234 803 456 7896", "Website":"https://www.techsolutionsltd.com", "imageurl":"https://itechsolutions.net.in/files/partners/ace.jpg", "membership level":"Bronze"},
+       {"Business Name": "Green Leaf Organic Farm", "Address": "987 Green St, Amichi, Anambra", "Phone Number": "+234 803 456 7897", "Website": "https://www.greenleaforganicfarm.com", "imageurl": "https://greenleaffarm.com/wp/wp-content/uploads/2023/06/glf-logo-topaz-enhance.png", "membership level": "Silver"},
+       {"Business Name": "Amichi Bookstore", "Address": "159 Book Ave, Amichi, Anambra", "Phone Number": "+234 803 456 7898", "Website": "https://www.amichibookstore.com", "imageurl": "https://www.vectorlogo.es/wp-content/uploads/2019/05/logo-vector-amichi.jpg", "membership level": "Bronze"},
+       {"Business Name": "Sunshine Bakery", "Address": "753 Sunshine Blvd, Amichi, Anambra", "Phone Number": "+234 803 456 7899", "Website": "https://www.sunshinebakery.com", "imageurl": "https://www.sunshinebakery.co.za/wp-content/uploads/2022/09/big-logo-1-1536x905.jpg", "membership level": "Silver"},
+       {"Business Name": "Croz enterprises", "Address": "No 5, Croz street, Amichi", "Phone Number": "+234 802 345 6789", "Website": "https://www.crozenterprises.com", "imageurl": "https://croz.net/app/uploads/2024/06/primary-logo-2.png", "membership level": "Gold"}
+
+    ]
+}    

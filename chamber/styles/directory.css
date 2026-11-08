@@ -1,0 +1,197 @@
+* {
+    font-family: "josefin sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/**********header**********/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405b
+}
+
+/*********hamburger********/
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D405b;
+    cursor: pointer;
+    font-family: verdana, geneva, tahoma, sans-serif;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+
+}
+
+.hamburger.show::before {
+    content: "\00D7"
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3D405b;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation a:hover {
+    background-color: #e07A5F
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+h1 {
+    margin-left: 10px;
+    background-color: #3D405b;
+    color: #ddd
+}
+
+footer {
+    background-color: #d9d9d9;
+    padding: 1.25rem 1rem;
+    text-align: left;
+    border-radius: 0 0 20px 20px;
+}
+
+footer p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    margin: 1.25rem 0;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #666;
+    border-radius: 50%;
+}
+
+.social img {
+    width: 26px;
+    height: 26px;
+    filter: invert(1);
+}
+
+.social a:hover {
+    background-color: #3D405b;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem 10px 0;
+}
+
+.filters button {
+    flex: 1;
+    max-width: 160px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #ccc;
+    border: 2px solid #222;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filters button[aria-pressed="true"] {
+    background-color: #3D405b;
+    color: #fff;
+}
+
+#directory {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 10px;
+}
+
+#directory.grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+#directory.list {
+    grid-template-columns: 1fr;
+}
+
+.member-card {
+    border: 1px solid #3D405b;
+    padding: 1rem;
+    text-align: center;
+}
+
+.member-card img {
+    display: block;
+    margin: 0 auto 0.5rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.member-card h2 {
+    margin: 0.25rem 0;
+    font-size: 1.1rem;
+    color: #3D405b;
+}
+
+.member-card p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+#directory.list .member-card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+#directory.list .member-card img {
+    margin: 0;
+}
