@@ -23,6 +23,8 @@ function displayMembers(companies) {
     companies.forEach(company => {
         const card = document.createElement('article');
         card.classList.add('member-card');
+        const loadingAttr = index === 0 ? 'eager' : 'lazy';
+        const fetchPriority = index === 0 ? 'fetchPriority="high"' : '';
 
         card.innerHTML = `
             <img src="${company['imageurl']}" alt="${company['Business Name']} logo" loading="lazy" width="120" height="80">

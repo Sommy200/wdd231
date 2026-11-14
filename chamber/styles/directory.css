@@ -148,6 +148,7 @@ footer p {
     display: grid;
     gap: 1rem;
     padding: 1rem 10px;
+    min-height: 450px;
 }
 
 #directory.grid {
