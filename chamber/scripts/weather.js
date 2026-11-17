@@ -44,8 +44,8 @@ function displayCurrentWeather(data) {
     currentWeatherContainer.innerHTML = `
         <img src="${iconSrc}" alt="${description}">
         <div>
-            <p style="font-size: 1.5rem; font-weight: bold; margin: 0; color: #3D405b;">${temp}&deg;C</p>
-            <p style="margin: 0; color: #666; text-transform: capitalize;">${capitalizedDesc}</p>
+            <p class="weather-metric">${temp}&deg;C</p>
+            <p class="weather-desc">${capitalizedDesc}</p>
         </div>
     `;
 }
@@ -70,7 +70,7 @@ function displayForecast(data) {
             <h4>${dayName}</h4>
             <img src="${iconSrc}" alt="${description}" width="40" height="40">
             <p><strong>${temp}&deg;C</strong></p>
-            <p style="font-size: 0.8rem; text-transform: capitalize;">${description}</p>
+            <p class="weather.card">${description}</p>
         `;
 
         forecastContainer.appendChild(dayCard);

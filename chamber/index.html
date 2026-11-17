@@ -29,18 +29,19 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </head>
 
 <body>
     <header>
         <img src="images/growth-chart-invest.svg" alt="Amichi Chamber of Commerce Logo" width="24" height="24">
         <span>Home|Amichi Chamber of Commerce</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
@@ -48,7 +49,7 @@
     <main>
         <h1> Home</h1>
         <section class="hero">
-            <img src= "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Computer screen showing financial projections" class="hero-img" width="900" height="600">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Computer screen showing financial projections" class="hero-img" width="900" height="600">
             <img src="https://independent.ng/wp-content/uploads/2026/09/Amichi.png" alt="Amichi town logo" class="hero-img" width="900" height="600">
             <div class="hero-content">
                 <h2>Welcome to Amichi Chamber of Commerce</h2>
@@ -85,6 +86,13 @@
             </div>
             <div id="forecast" class="forecast-container">
                 <!-- 3-day forecast will be dynamically injected here -->
+            </div>
+        </section>
+
+        <section class="spotlights-container">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards" class="spotlight-grid">
+                <!-- Spotlight cards will be dynamically loaded here -->
             </div>
         </section>
        
