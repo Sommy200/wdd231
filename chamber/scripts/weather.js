@@ -70,7 +70,7 @@ function displayForecast(data) {
             <h4>${dayName}</h4>
             <img src="${iconSrc}" alt="${description}" width="40" height="40">
             <p><strong>${temp}&deg;C</strong></p>
-            <p class="weather.card">${description}</p>
+            <p class="weather.day">${description}</p>
         `;
 
         forecastContainer.appendChild(dayCard);
