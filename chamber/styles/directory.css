@@ -1,5 +1,5 @@
 * {
-    font-family: "josefin sans", sans-serif;
+    font-family: "josefin Sans", sans-serif;
     box-sizing: border-box;
 }
 
@@ -81,6 +81,8 @@ h1 {
     background-color: #3D405b;
     color: #ddd
 }
+
+
 
 footer {
     background-color: #d9d9d9;
@@ -196,4 +198,41 @@ footer p {
 
 #directory.list .member-card img {
     margin: 0;
+}
+
+.thankyou-card {
+    max-width: 650px;
+    margin: 1.5rem auto 2.5rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.submission-details {
+    background-color: #fff;
+    border-left: 5px solid #3D405b;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+    border-radius: 4px;
+}
+
+.submission-details p {
+    margin: 0.6rem 0;
+    font-size: 1.05rem;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background-color: #3D405b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background-color: #e07A5F;
+    color: #111;
 }

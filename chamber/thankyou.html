@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Amichi Chamber of Commerce</title>
+    <meta name="author" content="Somtochukwu Unachukwu">
+    <meta name="description" content="Thank you for applying to join the Amichi Chamber of Commerce.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory_large.css">
+
+    <link rel="icon" href="favicon-chamber.ico">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/growth-chart-invest.svg" alt="Amichi Chamber of Commerce Logo" width="24" height="24">
+        <span>Join | Amichi Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Application Received</h1>
+        <section class="thankyou-card">
+            <h2>Thank You for Joining!</h2>
+            <p>We appreciate your interest in the Amichi Chamber of Commerce. Below is a summary of your submitted
+                application details:</p>
+
+            <div id="results" class="submission-details">
+                <!-- Populated by thankyou.js -->
+            </div>
+
+            <a href="index.html" class="back-btn">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Amichi Chamber of Commerce</strong></p>
+            <p>No 15 Dicosean Hospital Close</p>
+            <p>Amichi, Nigeria</p>
+            <p>info@amichi-chamber.com</p>
+            <p>+234 703 806 1441</p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/somtochukwu.unachukwu"><img src="images/face_book.svg" alt="Facebook"
+                    width="26" height="26"></a>
+            <a href="https://www.linkedin.com/in/somtochukwu-christian-unachukwu-9a2537103"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="26" height="26"></a>
+            <a href="https://github.com/Sommy200"><img src="images/github.svg" alt="GitHub" width="26" height="26"></a>
+        </div>
+
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Somtochukwu Unachukwu</p>
+            <p>&copy; <span id="currentyear"></span> Amichi Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

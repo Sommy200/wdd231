@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join| Amichi Chamber of Commerce</title>
+    <meta name="author" content="Somtochukwu Unachukwu">
+    <meta name="description"
+        content="This website will serve as a resource hub for businesses in the city of Amichi. The site provides information on local events, host networking. ">
+
+    <meta property="og:title" content="Amichi Chamber of Commerce">
+    <meta property="og:description"
+        content="This website will serve as a resource hub for businesses in the city of Amichi. The site provides information on local events, host networking. ">
+    <meta property="og:image" content="https://sommy200.github.io/wdd231/chamber/images/growth-chart-invest.svg">
+    <meta property="og:url" content="https://sommy200.github.io/wdd231/chamber/Join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/directory_large.css">
+
+    <link rel="icon" href="favicon-chamber.ico">
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/growth-chart-invest.svg" alt="Amichi Chamber of Commerce Logo" width="24" height="24">
+        <span>Join|Amichi Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li class="current"><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="join-container">
+            <!-- Membership Application Form -->
+            <section class="form-section">
+                <h2>Membership Application</h2>
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label title="Enter your first name">
+                        First Name*
+                        <input type="text" name="fname" title="Applicant First Name" autocomplete="given-name" required>
+                    </label>
+        
+                    <label title="Enter your last name">
+                        Last Name*
+                        <input type="text" name="lname" title="Applicant Last Name" autocomplete="family-name" required>
+                    </label>
+        
+                    <label title="Enter your title within the organization">
+                        Organizational Title
+                        <input type="text" name="orgtitle"
+                            title="Organizational Title (letters, hyphens, and spaces only, minimum 7 characters)"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+        
+                    <label title="Enter your email address">
+                        Email Address*
+                        <input type="email" name="email" title="Applicant Email Address" autocomplete="email"
+                            placeholder="example@domain.com" required>
+                    </label>
+        
+                    <label title="Enter your mobile phone number">
+                        Mobile Phone Number*
+                        <input type="tel" name="phone" title="Applicant Mobile Phone Number" autocomplete="tel" required>
+                    </label>
+        
+                    <label title="Enter your business or organization name">
+                        Business / Organization Name*
+                        <input type="text" name="organization" title="Business or Organization Name" autocomplete="organization"
+                            required>
+                    </label>
+        
+                    <label title="Select a membership level">
+                        Membership Level
+                        <select name="membership" title="Membership Level Selection">
+                            <option value="" disabled selected>Select a Membership Level...</option>
+                            <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+        
+                    <label title="Describe your business or organization">
+                        Business / Organization Description
+                        <textarea name="description" title="Business or Organization Description" rows="4"></textarea>
+                    </label>
+        
+                    <!-- Hidden Timestamp -->
+                    <input type="hidden" name="timestamp" id="timestamp">
+        
+                    <input type="submit" value="Apply for Membership" class="submit-btn">
+                </form>
+            </section>
+
+            <!-- Membership Level Cards -->
+            <section class="cards-section">
+                <h2>Membership Levels</h2>
+                <div class="membership-cards">
+                    <div class="m-card card-1">
+                        <h3>Non Profit Membership Level</h3>
+                        <button type="button" class="open-modal-btn" data-modal="modal-np">Learn More</button>
+                    </div>
+            
+                    <div class="m-card card-2">
+                        <h3>Bronze Membership Level</h3>
+                        <button type="button" class="open-modal-btn" data-modal="modal-bronze">Learn More</button>
+                    </div>
+            
+                    <div class="m-card card-3">
+                        <h3>Silver Membership Level</h3>
+                        <button type="button" class="open-modal-btn" data-modal="modal-silver">Learn More</button>
+                    </div>
+            
+                    <div class="m-card card-4">
+                        <h3>Gold Membership Level</h3>
+                        <button type="button" class="open-modal-btn" data-modal="modal-gold">Learn More</button>
+                    </div>
+                </div>
+            </section>
+            </div>
+
+            <!-- Modals for Membership Benefits -->
+            <dialog id="modal-np" class="membership-modal">
+                <div class="modal-content">
+                    <button type="button" class="close-modal-btn" aria-label="Close Modal">&times;</button>
+                    <h3>NP Membership (Non-Profit)</h3>
+                    <p><strong>Cost:</strong> Free (0 NGN / year)</p>
+                    <ul>
+                        <li>Listing in the online Chamber Directory</li>
+                        <li>Access to monthly community networking mixers</li>
+                        <li>Eligibility to post community events on the Chamber calendar</li>
+                    </ul>
+                </div>
+            </dialog>
+            
+            <dialog id="modal-bronze" class="membership-modal">
+                <div class="modal-content">
+                    <button type="button" class="close-modal-btn" aria-label="Close Modal">&times;</button>
+                    <h3>Bronze Membership</h3>
+                    <p><strong>Cost:</strong> ₦50,000 / year</p>
+                    <ul>
+                        <li>All Non-Profit Membership benefits</li>
+                        <li>10% discount on Chamber business workshops &amp; trainings</li>
+                        <li>Ribbon-cutting ceremony for new business openings</li>
+                        <li>Access to member-to-member discount programs</li>
+                    </ul>
+                </div>
+            </dialog>
+            
+            <dialog id="modal-silver" class="membership-modal">
+                <div class="modal-content">
+                    <button type="button" class="close-modal-btn" aria-label="Close Modal">&times;</button>
+                    <h3>Silver Membership</h3>
+                    <p><strong>Cost:</strong> ₦120,000 / year</p>
+                    <ul>
+                        <li>All Bronze Membership benefits</li>
+                        <li>25% discount on all Chamber events and trade shows</li>
+                        <li>Rotating spotlight feature on the Chamber Home Page</li>
+                        <li>Free admission to quarterly leadership luncheons</li>
+                    </ul>
+                </div>
+            </dialog>
+            
+            <dialog id="modal-gold" class="membership-modal">
+                <div class="modal-content">
+                    <button type="button" class="close-modal-btn" aria-label="Close Modal">&times;</button>
+                    <h3>Gold Membership</h3>
+                    <p><strong>Cost:</strong> ₦250,000 / year</p>
+                    <ul>
+                        <li>All Silver Membership benefits</li>
+                        <li>Permanent premier spotlight placement on the Home Page</li>
+                        <li>50% discount on event sponsorships and booth rentals</li>
+                        <li>VIP invitations to annual executive summits with local officials</li>
+                        <li>Dedicated social media spotlight twice per quarter</li>
+                    </ul>
+                </div>
+            </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Amichi Chamber of Commerce</strong></p>
+            <p>No 15 Dicosean Hospital Close</p>
+            <p>Amichi, Nigeria</p>
+            <p>info@amichi-chamber.com</p>
+            <p>+234 703 806 1441</p>
+        </div>
+        
+        <div class="social">
+            <a href="https://www.facebook.com/somtochukwu.unachukwu"><img src="images/face_book.svg" alt="Facebook" width="26"
+                    height="26"></a>
+            <a href="https://www.linkedin.com/in/somtochukwu-christian-unachukwu-9a2537103"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="26" height="26"></a>
+            <a href="https://github.com/Sommy200"><img src="images/github.svg" alt="GitHub" width="26" height="26"></a>
+        </div>
+        
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Somtochukwu Unachukwu</p>
+            <p>&copy; <span id="currentyear"></span> Amichi Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
