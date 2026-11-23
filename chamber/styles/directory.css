@@ -77,9 +77,11 @@ header span {
 }
 
 h1 {
-    margin-left: 10px;
+    margin-left: 1rem 10px;
+    padding: 0.75rem 1rem;
     background-color: #3D405b;
-    color: #ddd
+    color: #ddd;
+    border-radius: 6px;
 }
 
 
