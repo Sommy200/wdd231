@@ -84,12 +84,19 @@ const filterButtons = document.querySelectorAll('.course-filters button');
 
 function displayCourses(courseArray) {
     courseList.innerHTML = courseArray
-        .map(course => `<li class="${course.completed ? 'completed' : ''}">${course.subject} ${course.number}${course.completed ? ' ✓' : ''}</li>`)
+        .map(course => `<li data-id="${course.subject}-${course.number}" class="${course.completed ? 'completed' : ''}">${course.subject} ${course.number}${course.completed ? ' ✓' : ''}</li>`)
         .join('');
 
     const credits = courseArray.reduce((sum, course) => sum + course.credits, 0);
     totalCredits.textContent = credits;
 }
+
+courseList.addEventListener('click', (event) => {
+    const li = event.target.closest('li');
+    if (!li) return;
+    const course = courses.find(c => `${c.subject}-${c.number}` === li.dataset.id);
+    if (course) displayCourseDetails(course);
+});
 
 function filterCourses(subject) {
     const filtered = subject === 'All'
@@ -103,3 +110,27 @@ filterButtons.forEach(button => {
 });
 
 displayCourses(courses);
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+    <button id="closeModal" aria-label="Close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    courseDetails.querySelector('#closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+const courseDetails = document.querySelector('#course-details');
+// Close the modal when the user clicks outside of it (on the backdrop)
+courseDetails.addEventListener('click', (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
